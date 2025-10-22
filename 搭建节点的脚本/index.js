@@ -15,12 +15,12 @@ const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活
 const YT_WARPOUT = process.env.YT_WARPOUT || false;   // 设置为true时强制使用warp出站访问youtube,false时自动检测是否设置warp出站
 const FILE_PATH = process.env.FILE_PATH || '.npm';    // sub.txt订阅文件路径
 const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅sub路径，默认为sub,例如：https://google.com/sub
-const UUID = process.env.UUID || '0a6568ff-ea3c-4271-9020-450560e10d63';  // 在不同的平台运行了v1哪吒请修改UUID,否则会覆盖
-const NEZHA_SERVER = process.env.NEZHA_SERVER || '';         // 哪吒面板地址,v1形式：nz.serv00.net:8008  v0形式：nz.serv00.net
+const UUID = process.env.UUID || '7e82a3d0-23e9-4bf0-b9ea-264382dffe31';  // 在不同的平台运行了v1哪吒请修改UUID,否则会覆盖
+const NEZHA_SERVER = process.env.NEZHA_SERVER || 'agent.alpha.us.kg:80';         // 哪吒面板地址,v1形式：nz.serv00.net:8008  v0形式：nz.serv00.net
 const NEZHA_PORT = process.env.NEZHA_PORT || '';             // v1哪吒请留空，v0 agent端口，当端口为{443,8443,2087,2083,2053,2096}时，自动开启tls
-const NEZHA_KEY = process.env.NEZHA_KEY || '';               // v1的NZ_CLIENT_SECRET或v0 agwnt密钥 
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';           // argo固定隧道域名,留空即使用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || '';               // argo固定隧道token或json,留空即使用临时隧道
+const NEZHA_KEY = process.env.NEZHA_KEY || 'gCNZBwoZ9WigfrzOzvgtNySHOfN78DPi';               // v1的NZ_CLIENT_SECRET或v0 agwnt密钥 
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'dataaa.mny.pp.ua';           // argo固定隧道域名,留空即使用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYTBjN2ExMTEwZjIwZTgxMzMwYTAxN2VjOGQ5MjNmYzQiLCJ0IjoiZWJiNzEyZTgtMzg0Ni00NzVhLWFjZGItNmFkZDljNzNlZDIwIiwicyI6Ik1EVmpZamxsTVRjdFl6ZGhPUzAwTTJaaUxXSmpNVE10T1RGaU5HVmtOelF5TnpJMCJ9';               // argo固定隧道token或json,留空即使用临时隧道
 const ARGO_PORT = process.env.ARGO_PORT || 8001;             // argo固定隧道端口,使用token需在cloudflare控制台设置和这里一致，否则节点不通
 const TUIC_PORT = process.env.TUIC_PORT || '';               // 此处变量留空不变，此平台不支持直连
 const HY2_PORT = process.env.HY2_PORT || '';                 // 此处变量留空不变，此平台不支持直连
@@ -29,8 +29,8 @@ const CFIP = process.env.CFIP || 'cdns.doon.eu.org';         // 优选域名或�
 const CFPORT = process.env.CFPORT || 443;                    // 优选域名或优选IP对应端口
 const PORT = process.env.PORT || 3000;                       // http订阅端口    
 const NAME = process.env.NAME || '';                         // 节点名称
-const CHAT_ID = process.env.CHAT_ID || '';                   // Telegram chat_id  两个变量不全不推送节点到TG 
-const BOT_TOKEN = process.env.BOT_TOKEN || '';               // Telegram bot_token 两个变量不全不推送节点到TG 
+const CHAT_ID = process.env.CHAT_ID || '7561949607';                   // Telegram chat_id  两个变量不全不推送节点到TG 
+const BOT_TOKEN = process.env.BOT_TOKEN || '8160941528:AAFPsK1r4toQAAkSLgnomVEXYFZ8_JDSa0g';               // Telegram bot_token 两个变量不全不推送节点到TG 
 
 //创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
